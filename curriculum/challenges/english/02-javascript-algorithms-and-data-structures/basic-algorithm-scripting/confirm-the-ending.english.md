@@ -28,6 +28,8 @@ tests:
     testString: assert(confirmEnding("Congratulation", "on") === true, '<code>confirmEnding("Congratulation", "on")</code> should return true.');
   - text: <code>confirmEnding("Connor", "n")</code> should return false.
     testString: assert(confirmEnding("Connor", "n") === false, '<code>confirmEnding("Connor", "n")</code> should return false.');
+  - text: <code>confirmEnding("Connor", "Connorx")</code> should return false.
+    testString: assert(confirmEnding("Connor", "Connorx") === false, '<code>confirmEnding("Connor", "Connorx")</code> should return false.');
   - text: <code>confirmEnding("Walking on water and developing software from a specification are easy if both are frozen"&#44; "specification"&#41;</code> should return false.
     testString: assert(confirmEnding("Walking on water and developing software from a specification are easy if both are frozen", "specification") === false, '<code>confirmEnding("Walking on water and developing software from a specification are easy if both are frozen"&#44; "specification"&#41;</code> should return false.');
   - text: <code>confirmEnding("He has to give me a new name", "name")</code> should return true.
